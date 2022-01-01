@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            Geekster Admission Form
+        </title>
+    </head>
+    <body style="background-color: wheat;">
+        <br>
+        <img src="https://geekster.in/images/logo.svg">
+        <br><br>
+        <h1 style="text-align: center;">Admission Form</h1>
+        <hr><br><br>
+        <form>
+            <section style="text-align: center;">
+                <span>Name&nbsp;&nbsp;</span>
+                <input type="text" placeholder="First Name" name="fname" required>
+                <input type="text" placeholder="Last Name" name="lname">
+            </section>
+            <br><br>
+            <section style="text-align: center;">
+                <span>Gender&nbsp;&nbsp;</span>
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+            </section>
+            <br><br>
+            <section style="text-align: center;">
+                <span>Age&nbsp;&nbsp;</span>
+                <input name="age" type="number" min="18" max="90" required>
+            </section>
+            <br><br>
+            <section style="text-align: center;">
+                <span>Course&nbsp;&nbsp;</span>
+                <select name="course">
+                    <option value="select course" readonly>Select Course</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="react">React js</option>
+                    <option value="angular">Angular js</option>
+                </select>
+            </section>
+            <br><br>
+            <section style="text-align: center;">
+                <span>Date Of Birth&nbsp;&nbsp;</span>
+                <input name="dob" type="date" required>
+            </section>
+            <br><br>
+            <section style="text-align: center;">
+                <span>Email&nbsp;&nbsp;</span>
+                <input name="email" type="email" placeholder="Email" required>
+            </section>
+            <br><br>
+            <section style="text-align: center;">
+                <span>Password</span>
+                <input name="password" type="password" placeholder="Password" required minlength="4">
+            </section>
+            <br><br>
+            <section style="text-align: center;">
+                <button type="submit" onclick="func()">Submit</button>
+                <input type="reset" value="Reset" onclick="reset">
+            </section>
+            <br><br>
+        </form>
+        <hr>
+        <section style="text-align: center;background-color: gray;">Made By Abhishek Ojha</section>
+        <hr>
+        <br><br>
+    </body>
+</html>
